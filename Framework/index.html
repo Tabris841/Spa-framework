@@ -13,6 +13,11 @@
     <link href="ext-modules/psDashboard/psDashboard.css" rel="stylesheet" />
     <link href="ext-modules/psMenu/psMenu.css" rel="stylesheet" />
     <link href="ext-modules/psFramework/psFramework.css" rel="stylesheet" />
+
+    <!-- widget css-->
+    <link href="app/widgets/wwaTemperature/wwaTemperature.css" rel="stylesheet" />
+    <link href="app/widgets/wwaInventory/wwaInventory.css" rel="stylesheet" />
+    <link href="app/widgets/wwaEmployee/wwaEmployee.css" rel="stylesheet" />
     
     <script src="scripts/jquery-2.2.0.min.js"></script>
     <script src="scripts/angular.min.js"></script>
@@ -28,6 +33,7 @@
 
     <script src="ext-modules/psDashboard/psDashboardModule.js"></script>
     <script src="ext-modules/psDashboard/psDashboardDirective.js"></script>
+    <script src="ext-modules/psDashboard/psWidgetBodyDirective.js"></script>
 
     <script src="ext-modules/psFramework/psFrameworkModule.js"></script>
     <script src="ext-modules/psFramework/psFrameworkController.js"></script>
@@ -36,9 +42,16 @@
     <script src="app/appModule.js"></script>
     <script src="app/appConfig.js"></script>
     <script src="app/appRouteConfig.js"></script>
+    <script src="app/services/dataService.js"></script>
     <script src="app/directives/wwaDashboardDirective.js"></script>
     <script src="app/directives/wwaGuidesDirective.js"></script>
     <script src="app/directives/wwaLocationsDirective.js"></script>
+
+    <!-- widget JavaScript files -->
+    <script src="app/widgets/wwaTemperature/wwaTemperatureDirective.js"></script>
+    <script src="app/widgets/wwaInventory/wwaInventoryDirective.js"></script>
+    <script src="app/widgets/wwaEmployee/wwaEmployeeDirective.js"></script>
+
 </head>
 <body class="container-fluid">
     <ps-framework title="Whitewater Adventures"
