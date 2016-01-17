@@ -1,21 +1,22 @@
 ﻿"use strict";
 
 angular.module("psFramework").controller("psFrameworkController",
-    ['$scope', '$rootScope', '$window', '$timeout',
-        function ($scope, $rootScope, $window, $timeout) {
+    ['$scope', '$window', '$timeout', '$rootScope',
+        function ($scope, $window, $timeout, $rootScope) {
 
             $scope.isMenuVisible = true;
             $scope.isMenuButtonVisible = true;
             $scope.isMenuVertical = true;
 
-            $scope.$on('ps-menu-orientation-changed-event', function (evt, data) {
-                $scope.isMenuVertical = data.isMenuVertical;
-            });
-
             $scope.$on('ps-menu-item-selected-event', function (evt, data) {
                 $scope.routeString = data.route;
+                
                 checkWidth();
                 broadcastMenuState();
+            });
+
+            $scope.$on('ps-menu-orientation-changed-event', function (evt, data) {
+                $scope.isMenuVertical = data.isMenuVertical;
             });
 
             $($window).on('resize.psFramework', function () {
@@ -43,7 +44,9 @@ angular.module("psFramework").controller("psFrameworkController",
             var broadcastMenuState = function () {
                 $rootScope.$broadcast('ps-menu-show',
                     {
-                        show: $scope.isMenuVisible
+                        show: $scope.isMenuVisible,
+                        isVertical: $scope.isMenuVertical,
+                        allowHorizontalToggle: !$scope.isMenuButtonVisible
                     });
             };
 

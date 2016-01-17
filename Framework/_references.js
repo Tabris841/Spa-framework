@@ -12,6 +12,7 @@
 /// <reference path="ext-modules/psMenu/psMenuModule.js" />
 /// <reference path="scripts/ai.0.15.0-build58334.js" />
 /// <reference path="scripts/angular.js" />
+/// <reference path="scripts/angular-animate.min.js" />
 /// <reference path="scripts/angular-mocks.js" />
 /// <reference path="scripts/bootstrap.js" />
 /// <reference path="scripts/jquery-2.2.0.js" />

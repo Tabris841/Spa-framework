@@ -102,16 +102,14 @@
     <Content Include="ext-modules\psMenu\psMenuItemDirective.js" />
     <Content Include="ext-modules\psMenu\psMenuItemTemplate.html" />
     <Content Include="ext-modules\psMenu\psMenuTemplate.html" />
-    <Content Include="obj\Debug\Framework.csproj.FileListAbsolute.txt" />
-    <Content Include="obj\Debug\Framework.dll" />
-    <Content Include="obj\Debug\Framework.pdb" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="scripts\angular-animate.js" />
+    <Content Include="scripts\angular-animate.min.js" />
     <Content Include="scripts\jquery-2.2.0.min.map" />
-    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
-    <Content Include="obj\Debug\Framework.csprojResolveAssemblyReference.cache" />
+    <Content Include="scripts\angular-animate.min.js.map" />
     <None Include="_references.js" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -168,14 +166,9 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
-    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
-    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="obj\Debug\TempPE\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
