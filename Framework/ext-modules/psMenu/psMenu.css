@@ -100,7 +100,7 @@
     display: inline-block;
     width: 165px !important;
     margin-left: 20px;
-    margin-top: 5px;
+    margin-top: 10px;
     line-height: 1.5em !important;
 }
 
@@ -118,7 +118,6 @@
     -webkit-transition: linear all 0.5s;
     transition: linear all 0.5s;
 }
-
 .ps-fade-in-animation.ng-hide {
     opacity: 0;
 }
