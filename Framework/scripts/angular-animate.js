@@ -791,7 +791,6 @@ var $AnimateCssProvider = ['$animateProvider', function($animateProvider) {
                '$$forceReflow', '$sniffer', '$$rAFScheduler', '$animate',
        function($window,   $$jqLite,   $$AnimateRunner,   $timeout,
                 $$forceReflow,   $sniffer,   $$rAFScheduler, $animate) {
-
     var applyAnimationClasses = applyAnimationClassesFactory($$jqLite);
 
     var parentCounter = 0;
@@ -1423,7 +1422,6 @@ var $$AnimateCssDriverProvider = ['$$animationProvider', function($$animationPro
 
   this.$get = ['$animateCss', '$rootScope', '$$AnimateRunner', '$rootElement', '$sniffer', '$$jqLite', '$document',
        function($animateCss,   $rootScope,   $$AnimateRunner,   $rootElement,   $sniffer,   $$jqLite,   $document) {
-
     // only browsers that support these properties can render animations
     if (!$sniffer.animations && !$sniffer.transitions) return noop;
 
@@ -1683,7 +1681,6 @@ var $$AnimateCssDriverProvider = ['$$animationProvider', function($$animationPro
 var $$AnimateJsProvider = ['$animateProvider', function($animateProvider) {
   this.$get = ['$injector', '$$AnimateRunner', '$$jqLite',
        function($injector,   $$AnimateRunner,   $$jqLite) {
-
     var applyAnimationClasses = applyAnimationClassesFactory($$jqLite);
          // $animateJs(element, 'enter');
     return function(element, event, classes, options) {
@@ -2066,7 +2063,6 @@ var $$AnimateQueueProvider = ['$animateProvider', function($animateProvider) {
                '$$animation', '$$AnimateRunner', '$templateRequest', '$$jqLite', '$$forceReflow',
        function($$rAF,   $rootScope,   $rootElement,   $document,   $$HashMap,
                 $$animation,   $$AnimateRunner,   $templateRequest,   $$jqLite,   $$forceReflow) {
-
     var activeAnimationsLookup = new $$HashMap();
     var disabledElementsLookup = new $$HashMap();
     var animationsEnabled = null;
@@ -2637,7 +2633,6 @@ var $$AnimateAsyncRunFactory = ['$$rAF', function($$rAF) {
 
 var $$AnimateRunnerFactory = ['$q', '$sniffer', '$$animateAsyncRun',
                       function($q,   $sniffer,   $$animateAsyncRun) {
-
   var INITIAL_STATE = 0;
   var DONE_PENDING_STATE = 1;
   var DONE_COMPLETE_STATE = 2;
@@ -2796,7 +2791,6 @@ var $$AnimationProvider = ['$animateProvider', function($animateProvider) {
 
   this.$get = ['$$jqLite', '$rootScope', '$injector', '$$AnimateRunner', '$$HashMap', '$$rAFScheduler',
        function($$jqLite,   $rootScope,   $injector,   $$AnimateRunner,   $$HashMap,   $$rAFScheduler) {
-
     var animationQueue = [];
     var applyAnimationClasses = applyAnimationClassesFactory($$jqLite);
 
@@ -3925,6 +3919,4 @@ angular.module('ngAnimate', [])
 
   .provider('$$animateJs', $$AnimateJsProvider)
   .provider('$$animateJsDriver', $$AnimateJsDriverProvider);
-
-
 })(window, window.angular);

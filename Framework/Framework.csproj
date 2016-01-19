@@ -94,6 +94,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\appController.js" />
     <Content Include="app\appRouteConfig.js" />
     <Content Include="app\dialogs\wwaSelectEmployeeController.js" />
     <Content Include="app\dialogs\wwaSelectEmployeeTemplate.html" />
@@ -211,6 +212,8 @@
     <Content Include="scripts\jquery-2.2.0.js" />
     <Content Include="scripts\jquery-2.2.0.min.js" />
     <None Include="scripts\_references.js" />
+    <Content Include="scripts\ngStorage.js" />
+    <Content Include="scripts\ngStorage.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

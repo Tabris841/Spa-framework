@@ -3,7 +3,6 @@
 angular.module("psFramework").controller("psFrameworkController",
     ['$scope', '$window', '$timeout', '$rootScope', '$location',
         function ($scope, $window, $timeout, $rootScope, $location) {
-
             $scope.isMenuVisible = true;
             $scope.isMenuButtonVisible = true;
             $scope.isMenuVertical = true;
@@ -53,6 +52,5 @@ angular.module("psFramework").controller("psFrameworkController",
             $timeout(function () {
                 checkWidth();
             }, 0);
-
         }
     ]);

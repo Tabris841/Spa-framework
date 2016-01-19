@@ -1,5 +1,4 @@
-﻿
-.ps-title-bar {
+﻿.ps-title-bar {
     background-color: white;
     padding: 0 20px;
     border-bottom: 2px solid black;
@@ -12,8 +11,6 @@
 .ps-title-area {
     display: inline-block;
 }
-
-
 
 .ps-icon {
     display: inline-block;
@@ -54,7 +51,7 @@
 
 @media screen and (min-width: 768px) {
     .ps-right-side-controls > div {
-        text-align: right;       
+        text-align: right;
     }
     .ps-logo-area {
         text-align: left;

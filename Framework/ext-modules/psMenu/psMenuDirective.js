@@ -3,7 +3,6 @@
 angular.module('psMenu').directive('psMenu', ['$timeout', function ($timeout) {
     return {
         scope: {
-
         },
         transclude: true,
         templateUrl: 'ext-modules/psMenu/psMenuTemplate.html',

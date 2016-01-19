@@ -3,7 +3,6 @@
 angular.module('psMenu').controller('psMenuController',
     ['$scope', '$rootScope',
         function ($scope, $rootScope) {
-
             $scope.isVertical = true;
             $scope.openMenuScope = null;
             $scope.showMenu = true;
@@ -31,7 +30,6 @@ angular.module('psMenu').controller('psMenuController',
             };
 
             $scope.toggleMenuOrientation = function () {
-
                 // close any open menu
                 if ($scope.openMenuScope)
                     $scope.openMenuScope.closeMenu();
@@ -54,7 +52,7 @@ angular.module('psMenu').controller('psMenuController',
                 }
             });
 
-            $scope.$on('ps-menu-show', function(evt, data) {
+            $scope.$on('ps-menu-show', function (evt, data) {
                 $scope.showMenu = data.show;
                 $scope.isVertical = data.isVertical;
                 $scope.allowHorizontalToggle = data.allowHorizontalToggle;

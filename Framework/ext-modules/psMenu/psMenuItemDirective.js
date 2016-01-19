@@ -10,7 +10,6 @@ angular.module('psMenu').directive('psMenuItem', function () {
         },
         templateUrl: 'ext-modules/psMenu/psMenuItemTemplate.html',
         link: function (scope, el, attr, ctrl) {
-
             scope.isActive = function () {
                 return el === ctrl.getActiveElement();
             };
