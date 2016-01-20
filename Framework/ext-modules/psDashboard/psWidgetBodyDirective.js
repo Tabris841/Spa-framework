@@ -1,8 +1,8 @@
 ﻿"use strict";
 
 angular.module('psDashboard').directive('psWidgetBody',
-    ['$compile', '$modal',
-    function ($compile, $modal) {
+    ['$compile', '$uibModal',
+    function ($compile, $uibModal) {
         return {
             templateUrl: 'ext-modules/psDashboard/psWidgetBodyTemplate.html',
             link: function (scope, element, attrs) {
@@ -20,7 +20,7 @@ angular.module('psDashboard').directive('psWidgetBody',
                         controller: scope.item.widgetSettings.controller,
                         scope: scope
                     };
-                    $modal.open(options);
+                    $uibModal.open(options);
                 };
 
                 scope.iconClicked = function () {

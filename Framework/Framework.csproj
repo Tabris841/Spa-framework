@@ -143,9 +143,6 @@
     <Content Include="images\therm-icon.png" />
     <Content Include="images\vest-icon.png" />
     <Content Include="packages.config" />
-    <Content Include="ApplicationInsights.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="scripts\angular-animate.js" />
     <Content Include="scripts\angular-animate.min.js" />
     <Content Include="scripts\angular-gridster.min.js" />
