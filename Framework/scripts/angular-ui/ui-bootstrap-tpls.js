@@ -1009,7 +1009,7 @@ angular.module('ui.bootstrap.dateparser', [])
   this.timezoneToOffset = timezoneToOffset;
   this.addDateMinutes = addDateMinutes;
   this.convertTimezoneToLocal = convertTimezoneToLocal;
-  
+
   function toTimezone(date, timezone) {
     return date && timezone ? convertTimezoneToLocal(date, timezone) : date;
   }
@@ -1161,7 +1161,6 @@ angular.module('ui.bootstrap.position', [])
     };
 
     return {
-
       /**
        * Provides a raw DOM element from a jQuery/jQLite element.
        *
@@ -3275,7 +3274,6 @@ angular.module('ui.bootstrap.modal', ['ui.bootstrap.stackedMap'])
             });
           }
 
-
           $q.when(animationPromise).then(function() {
             /**
              * If something within the freshly-opened modal already has focus (perhaps via a
@@ -3776,7 +3774,6 @@ angular.module('ui.bootstrap.modal', ['ui.bootstrap.stackedMap'])
                   appendTo: modalOptions.appendTo
                 });
                 modalOpenedDeferred.resolve(true);
-
             }, function resolveError(reason) {
               modalOpenedDeferred.reject(reason);
               modalResultDeferred.reject(reason);
@@ -5587,7 +5584,6 @@ angular.module('ui.bootstrap.timepicker', [])
         });
       }
     });
-
   };
 
   this.render = function() {

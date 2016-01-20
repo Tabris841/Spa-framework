@@ -1,6 +1,4 @@
-﻿
-
-.wwa-temperature-widget {
+﻿.wwa-temperature-widget {
     height: 100%;
     width: 100%;
     min-height: 180px;
@@ -32,6 +30,12 @@
     height: 100%;
     overflow: hidden;
     min-height: 180px;
+}
+
+.wwa-temperature-body .fa-spin {
+    position: absolute;
+    left: 10px;
+    top: 10px;
 }
 
 .wwa-temperature-view {

@@ -1,7 +1,6 @@
 ﻿"use strict";
 
 angular.module('app').config(['$routeProvider', function ($routeProvider) {
-
     var routes = [
         {
             url: '/dashboard',
@@ -28,5 +27,4 @@ angular.module('app').config(['$routeProvider', function ($routeProvider) {
     });
 
     $routeProvider.otherwise({ redirectTo: '/dashboard' });
-
 }]);

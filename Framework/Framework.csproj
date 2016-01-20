@@ -94,6 +94,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\appController.js" />
     <Content Include="app\appRouteConfig.js" />
     <Content Include="app\dialogs\wwaSelectEmployeeController.js" />
     <Content Include="app\dialogs\wwaSelectEmployeeTemplate.html" />
@@ -119,6 +120,10 @@
     <Content Include="ext-modules\psDashboard\psDashboardTemplate.html" />
     <Content Include="ext-modules\psDashboard\psWidgetBodyDirective.js" />
     <Content Include="ext-modules\psDashboard\psWidgetBodyTemplate.html" />
+    <Content Include="ext-modules\psFramework\psUserProfile\psUserProfileDirective.js" />
+    <Content Include="ext-modules\psFramework\psUserProfile\psUserProfileSmallDirective.js" />
+    <Content Include="ext-modules\psFramework\psUserProfile\psUserProfileSmallTemplate.html" />
+    <Content Include="ext-modules\psFramework\psUserProfile\psUserProfileTemplate.html" />
     <Content Include="ext-modules\psMenu\psMenu.css" />
     <Content Include="ext-modules\psMenu\psMenuController.js" />
     <Content Include="ext-modules\psMenu\psMenuDirective.js" />
@@ -127,6 +132,7 @@
     <Content Include="ext-modules\psMenu\psMenuItemDirective.js" />
     <Content Include="ext-modules\psMenu\psMenuItemTemplate.html" />
     <Content Include="ext-modules\psMenu\psMenuTemplate.html" />
+    <Content Include="gulpfile.js" />
     <Content Include="images\employee-andy.png" />
     <Content Include="images\employee-april.png" />
     <Content Include="images\employee-don.png" />
@@ -142,6 +148,7 @@
     <Content Include="images\river4.png" />
     <Content Include="images\therm-icon.png" />
     <Content Include="images\vest-icon.png" />
+    <Content Include="index - old.html" />
     <Content Include="packages.config" />
     <Content Include="scripts\angular-animate.js" />
     <Content Include="scripts\angular-animate.min.js" />
@@ -155,6 +162,7 @@
     <Content Include="scripts\jquery-2.2.0.min.map" />
     <Content Include="scripts\angular-animate.min.js.map" />
     <Content Include="scripts\angular-route.min.js.map" />
+    <Content Include="package.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -208,6 +216,8 @@
     <Content Include="scripts\jquery-2.2.0.js" />
     <Content Include="scripts\jquery-2.2.0.min.js" />
     <None Include="scripts\_references.js" />
+    <Content Include="scripts\ngStorage.js" />
+    <Content Include="scripts\ngStorage.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
